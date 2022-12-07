@@ -1,0 +1,3 @@
+theme: jekyll-theme-cayman
+book_filename: "Microbioma 16S e ITS"
+rmd_files: ["index.Rmd"]

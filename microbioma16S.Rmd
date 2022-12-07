@@ -1,0 +1,160 @@
+---
+title: |
+  | [![](wgyt.png){width=250 style="display: block; margin: 0 auto"}](https://www.wintergenomics.com)
+subtitle: "Microbioma 16S e ITS" 
+author: "Winter Genomics School"
+output: 
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+github-repo: "wintergenomics/microbioma16sits"
+---
+
+¡Hola! 
+
+Estamos muy emocionadas de que formes parte del nuestro último curso de éste 2022: **"Análisis de datos de microbioma 16S e ITS"**. 
+
+## Requisitos
+
++ Computadora con al menos 8Gb de memoria y permisos de administrador.
++ Tener instalada R la versión más reciente de R o al menos la versión `+ 4.1`.
++ **Tener conocimientos previos de programación en R**
+
+Por favor asegúrate de que tengas instaladas las siguientes paqueterías de R.
+
+```
+install.packages("BiocManager")
+```
+## Paqueterías especializadas para el análisis de datos de microbioma 
+
+### phyloseq
+```
+BiocManager::install("phyloseq")
+library(phyloseq)
+```
+
+### ape
+```
+install.packages("ape")
+library(ape)
+```
+
+### DADA2
+```
+BiocManager::install("dada2")
+library(dada2)
+```
+
+### Dependencias extras que se deben instalar en **Linux** para utilizar DADA2
+Abrir terminal y copiar cada comando
+
+```
+sudo apt-get install libxml2-dev
+sudo apt install curl
+sudo apt-get install libcurl4-gnutls-dev
+```
+
+### Microbiome
+
++ Opción 1
+
+```
+BiocManager::install("microbiome")
+library(microbiome)
+```
+
++ Opción 2 
+
+```
+install.packages("remotes")
+remotes::install_url(url="https://github.com/microsud/microbiomeutilities/archive/master.zip", INSTALL_opt= "--no-multiarch")
+remotes::install_github("microbiome/microbiome")
+library(microbiome)
+```
+
+## Microbiomeutilites
+```
+install.packages("devtools")
+devtools::install_github("microsud/microbiomeutilities")
+library(microbiomeutilities)
+```
+
+### Dependencias extras que se deben instalar en **Linux** para utilizar microbiomeutilities
+Abrir terminal y copiar cada comando
+
+```
+sudo apt-get install -y libfontconfig1-dev
+sudo apt-get install -y libharfbuzz-dev
+sudo apt-get install -y libfribidi-dev
+sudo apt-get install -y libfreetype6-dev
+sudo apt-get install -y libpng-dev
+sudo apt-get install -y libtiff5-dev
+sudo apt-get install -y libjpeg-dev
+```
+
+
+## Manipulación de datos 
+
+### DT
+```
+install.packages("DT")
+library(DT)
+```
+
+### Magrittr
+
+```
+install.packages("magrittr")
+library(magrittr)
+```
+
+### Tidyverse
+```
+install.packages("tidyverse")
+library(tidyverse)
+```
+
+### Dependencias extras que se deben instalar en **Linux** para utilizar tidyverse
+Abrir terminal y copiar cada comando
+
+```
+sudo apt install libcurl4-openssl-dev libssl-dev libxml2-dev
+```
+
+
+## Gráficos 
+
+### VennDiagram
+```
+install.packages("VennDiagram")
+library(VennDiagram)
+```
+
+### Paleta de colores
+```
+install.packages('ghibli')
+library(ghibli)
+```
+
+### ggpubr
+
+```
+library(devtools) 
+install.packages("ggpubr")
+library(ggpubr)
+```
+
+### Dependencias extras que se deben instalar en **Linux** para utilizar ggpubr
+Abrir terminal y copiar cada comando
+
+```
+sudo apt install cmake
+```
+
+
+## Problemas durante la instalación
+
+<p align="justify">
+Si tienes algún problema instalando las paqueterías, escríbenos a cursos@wintergenomics.com con un screenshot del error así como las características de tu computadora para poder asesorarte. 
+</p>
+
