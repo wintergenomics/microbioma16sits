@@ -72,12 +72,6 @@ library(ape)</code></pre>
 <pre><code>BiocManager::install(&quot;dada2&quot;)
 library(dada2)</code></pre>
 </div>
-<div id="dependencias-extras-que-deben-instalar-usuarios-con-SO-linux-para-utilizar-dada2" class="section level3">
-<h3>Dependencias extras que se deben instalar en <strong>Linux</strong> para utilizar DADA2</h3>
-<p>Abrir terminal y copiar cada comando</p>
-<pre><code>sudo apt-get install libxml2-dev
-sudo apt install curl
-sudo apt-get install libcurl4-gnutls-dev</code></pre>
 </div>
 <div id="microbiome" class="section level3">
 <h3>Microbiome</h3>
@@ -100,17 +94,6 @@ library(microbiome)</code></pre>
 <pre><code>install.packages(&quot;devtools&quot;)
 devtools::install_github(&quot;microsud/microbiomeutilities&quot;)
 library(microbiomeutilities)</code></pre>
-<div id="dependencias-extras-que-se-deben-instalar-en-linux-para-utilizar-microbiomeutilities" class="section level3">
-<h3>Dependencias extras que deben instalar usuarion con SO <strong>Linux</strong> para utilizar microbiomeutilities</h3>
-<p>Abrir terminal y copiar cada comando</p>
-<pre><code>sudo apt-get install -y libfontconfig1-dev
-sudo apt-get install -y libharfbuzz-dev
-sudo apt-get install -y libfribidi-dev
-sudo apt-get install -y libfreetype6-dev
-sudo apt-get install -y libpng-dev
-sudo apt-get install -y libtiff5-dev
-sudo apt-get install -y libjpeg-dev</code></pre>
-</div>
 </div>
 <div id="manipulación-de-datos" class="section level2">
 <h2>Manipulación de datos</h2>
@@ -128,12 +111,7 @@ library(magrittr)</code></pre>
 <h3>Tidyverse</h3>
 <pre><code>install.packages(&quot;tidyverse&quot;)
 library(tidyverse)</code></pre>
-</div>
-<div id="dependencias-extras-que-se-deben-instalar-en-linux-para-utilizar-tidyverse" class="section level3">
-<h3>Dependencias extras que deben instalar usuarion con SO <strong>Linux</strong> para utilizar tidyverse</h3>
-<p>Abrir terminal y copiar cada comando</p>
-<pre><code>sudo apt install libcurl4-openssl-dev libssl-dev libxml2-dev</code></pre>
-</div>
+
 </div>
 <div id="gráficos" class="section level2">
 <h2>Gráficos</h2>
@@ -154,10 +132,33 @@ install.packages(&quot;ggpubr&quot;)
 library(ggpubr)</code></pre>
 </div>
 <div id="dependencias-extras-que-se-deben-instalar-en-linux-para-utilizar-ggpubr" class="section level3">
-<h3>Dependencias extras que se deben instalar usuarios con SO <strong>Linux</strong> para utilizar ggpubr</h3>
+<h2>Dependencias extras que deben instalar únicamente usuarios con SO <strong>Linux</strong></h2>
 <p>Abrir terminal y copiar cada comando</p>
+<h3>DADA2</h3>
+<pre><code>sudo apt-get install libxml2-dev
+sudo apt install curl
+sudo apt-get install libcurl4-gnutls-dev</code></pre>
+</div>   
+<h3>microbiomeutilities</h3>
+<pre><code>sudo apt-get install -y libfontconfig1-dev
+sudo apt-get install -y libharfbuzz-dev
+sudo apt-get install -y libfribidi-dev
+sudo apt-get install -y libfreetype6-dev
+sudo apt-get install -y libpng-dev
+sudo apt-get install -y libtiff5-dev
+sudo apt-get install -y libjpeg-dev</code></pre>
+</div> 
+</div>
+<h3>tidyverse</h3>
+<pre><code>sudo apt install libcurl4-openssl-dev libssl-dev libxml2-dev</code></pre>
+</div>    
+</div>   
+<h3>ggpubr</h3>
 <pre><code>sudo apt install cmake</code></pre>
 </div>
+
+
+ 
 </div>
 <div id="problemas-durante-la-instalación" class="section level2">
 <h2>Problemas durante la instalación</h2>
